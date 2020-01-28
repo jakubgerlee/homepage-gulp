@@ -318,7 +318,209 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #f9c802;
-  background: #2d2241; }
+  background-color: white;
+  color: black; }
+
+h2 {
+  color: #1460aa; }
+
+.main {
+  width: 100%;
+  max-width: 800px;
+  overflow: auto;
+  margin: 90px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 10px auto 10px auto;
+      grid-template-areas: "header header" "about content" "footer footer";
+  -ms-grid-columns: 200px, 1fr;
+  grid-template-columns: 200px, 1fr;
+  grid-gap: 10px; }
+
+.about {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: about;
+  min-width: 200px; }
+  .about__header {
+    color: #1460aa; }
+  .about__link {
+    color: #1a946f;
+    display: block; }
+  .about__paragraph {
+    padding: 16px 10px;
+    font-size: 20px;
+    border: 8px dotted green;
+    line-height: 30px; }
+    .about__paragraph--color {
+      color: #ff6700; }
+  .about__picture {
+    width: 100%;
+    max-width: 200px;
+    margin: 30px 10px 10px 30px;
+    display: block;
+    float: left; }
+
+.about .article__paragraph {
+  padding: 16px 10px;
+  font-size: 20px;
+  border: 5px dotted green; }
+
+.content {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: content; }
+  .content__header {
+    color: #0496ff; }
+
+.comments .comments__paragraph {
+  padding: 16px 10px;
+  font-size: 20px;
+  border: 5px solid lightsalmon; }
+
+.data__table {
+  width: 100%; }
+
+.day {
+  padding: 16px; }
+  .day__header {
+    color: #0496ff; }
+
+.day .day__paragraph {
+  padding: 16px 10px;
+  font-size: 20px;
+  line-height: 24px;
+  display: block;
+  margin: 0; }
+
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer; }
+  .footer__scroll__up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px; }
+
+.footer .footer__logo {
+  display: block;
+  width: 100%;
+  margin: 32px auto; }
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px; }
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header; }
+  .header__title {
+    color: #1460aa; }
+
+.hobby__list {
+  list-style: none;
+  padding: 0; }
+
+.site-header {
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .navigation__link {
+    color: #1a946f; }
+    .navigation__link:visited {
+      color: #ccc; }
+    .navigation__link:hover {
+      color: #cabbbc; }
+    .navigation__link--none {
+      text-decoration: none; }
+  .navigation__list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0; }
+  .navigation__switcher {
+    display: none; }
+
+.navigation .navigation__item {
+  display: inline;
+  text-decoration: none;
+  padding: 0 16px; }
+
+@media (max-width: 640px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px; }
+  .navigation__list {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .navigation__list--visibility {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .navigation__item {
+    margin: 16px; }
+  .navigation__switcher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+    background: none;
+    right: 16px;
+    top: 16px;
+    position: absolute; }
+  .main {
+        grid-template-areas: "header" "about" "content" "footer"; }
+  .site-header {
+    min-height: 48px; }
+  .about {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1; }
+  .content {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1; }
+  .footer {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1; }
+  .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1; } }
 
 /*# sourceMappingURL=main.css.map */
