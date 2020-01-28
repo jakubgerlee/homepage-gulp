@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700&display=swap&subset=latin-ext");
 
 html {
   box-sizing: border-box;
@@ -14,10 +15,12 @@ html {
 body {
   background-color: white;
   color: black;
+  font-family: "Lato", sans-serif;
 }
 
 h2 {
   color: #1460aa;
+  font-family: "Roboto Slab", serif;
 }
 
 .main {
@@ -89,6 +92,7 @@ h2 {
   padding: 16px;
   &__header {
     color: #0496ff;
+    font-family: "Roboto Slab", serif;
   }
 }
 
@@ -126,6 +130,7 @@ h2 {
   grid-area: header;
   &__title {
     color: #1460aa;
+    font-family: "Roboto Slab", serif;
   }
 }
 
