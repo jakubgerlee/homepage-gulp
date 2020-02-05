@@ -5,26 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <title>Document</title>
   </head>
 
   <body>
     <header class="site-header">
       <nav class="navigation">
-        <ul class="navigation__list navigation__list--visibility">
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--none" href="index.html"
-              >Strona Głowna</a
-            >
+        <ul class="navigation__list navigation__list--js">
+          <li class="navigation__link navigation">
+            <a class="navigation__link" href="index.html">Strona Głowna</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--none" href="login.html"
-              >Logowanie</a
-            >
+            <a class="navigation__link" href="#">Podstrona</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Podstrona</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Podstrona</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="login.html">Logowanie</a>
           </li>
         </ul>
       </nav>
+      <button
+        class="navigation__switcher navigation__switcher--js"
+        aria-label="Open the menu"
+      >
+        &#9776;
+      </button>
     </header>
 
     <main class="main">

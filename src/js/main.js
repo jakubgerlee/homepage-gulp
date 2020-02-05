@@ -22,14 +22,11 @@ if ("serviceWorker" in navigator) {
 
 // place your code below
 
-const name = "Kuba";
-const age = 25;
-// alert("Hi");
-console.log(`Mam na imie ${name}, i mam lat ${age}`);
-
-function calculate(x) {
-  return x * 7;
-}
+document.cookie = "TestoweCiastko = wartość";
+localStorage.setItem("name", "Kuba");
+const person = { name: "kuba", war: 1 };
+localStorage.setItem("name2", JSON.stringify(person));
+console.log(JSON.parse(JSON.stringify(person)));
 
 const button = document.querySelector(".header__button-js");
 button.addEventListener("click", e => {
